@@ -10,5 +10,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      var redirectTo = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirectTo && redirectTo !== location.href) {
+        history.replaceState(null, null, redirectTo);
+      }
+    </script>
+    
   </body>
 </html>
