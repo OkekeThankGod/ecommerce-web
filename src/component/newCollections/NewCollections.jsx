@@ -5,7 +5,7 @@ import Item from '../item/Item';
 export default function NewCollections() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800 ">
         New Collections
       </h1>
       <hr className="w-20 mx-auto border-t-4 border-gray-800 mb-8" />

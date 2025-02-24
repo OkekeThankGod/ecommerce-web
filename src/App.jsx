@@ -7,7 +7,7 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
-import { banner_mens, banner_women, banner_kids } from './configban';
+import { banner_mens, banner_women, banner_kids } from '../src/Configban';  
 
 export default function App() {
   return (

@@ -42,3 +42,47 @@
     justify-content: flex-end;
     padding-top: 50px;
 }
+
+/* For Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .offers {
+        width: 90%;
+        padding: 0px 50px;
+    }
+    .offers-left h1 {
+        font-size: 60px;
+    }
+    .offers-left p {
+        font-size: 20px;
+    }
+    .offers-left button {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+/* For Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .offers {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .offers-left h1 {
+        font-size: 45px;
+    }
+    .offers-left p {
+        font-size: 18px;
+    }
+    .offers-left button {
+        width: 220px;
+        height: 55px;
+        font-size: 18px;
+    }
+    .offers-right {
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
