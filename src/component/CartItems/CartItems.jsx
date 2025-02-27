@@ -27,10 +27,10 @@ export default function CartItems() {
             return (
               <div key={e.id} className="border-b py-4 flex items-center justify-between">
   {/* Product Image */}
-  <img src={e.image} alt={e.name} className="w-16 h-16 object-cover rounded" />
+  <img src={e.image} alt={e.name} className="w-16 h-20 object-cover rounded mx-22" />
 
   {/* Product Name */}
-  <p className="text-gray-700 font-medium">{e.name}</p>
+  <p className="text-slate-400 font-medium">{e.name}</p>
 
   {/* Product Price */}
   <p className="text-gray-900 font-semibold">${e.new_price}</p>

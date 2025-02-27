@@ -26,7 +26,7 @@ export default function ShopHeader() {
             <FaBars />
           </button>
           <FaDeviantart className="text-green-600 text-3xl" />
-          <h2 className="text-lg font-bold text-gray-800 text-red-600">SHOPON</h2>
+        <Link to='/'> <h2 className="text-lg font-bold text-gray-800 text-red-600">SHOPON</h2> </Link> 
         </div>
 
         {/* Center Section: Navigation Links (Hidden on Mobile) */}
@@ -35,6 +35,7 @@ export default function ShopHeader() {
           <li onClick={() => setMenu('Men')}><Link to="/Mens" className={`${menu === 'Men' && "font-bold text-blue-600"}`}>Men</Link></li>
           <li onClick={() => setMenu('Women')}><Link to="/Womens" className={`${menu === 'Women' && "font-bold text-blue-600"}`}>Women</Link></li>
           <li onClick={() => setMenu('Kids')}><Link to="/Kids" className={`${menu === 'Kids' && "font-bold text-blue-600"}`}>Kids</Link></li>
+          <Link to='/practice'>Practice</Link>
         </ul>
 
         {/* Right Section: Cart & Login */}
@@ -64,7 +65,7 @@ export default function ShopHeader() {
       <div className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 md:hidden`}>
         {/* Sidebar Header */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-gray-600">
-          <h2 className="text-xl font-bold">Menu</h2>
+          <h2 className="text-xl font-bold">SHOPON</h2>
           <button onClick={() => setSidebarOpen(false)} className="text-2xl">
             <FaTimes />
           </button>
@@ -73,7 +74,7 @@ export default function ShopHeader() {
         {/* Sidebar Links */}
         <ul className="flex flex-col mt-5 space-y-4 text-lg font-medium">
           <li className="px-6 py-3 hover:bg-gray-700" onClick={() => { setMenu('Shop'); setSidebarOpen(false); }}>
-            <Link to="/" className={`${menu === 'Shop' && "border-l-4 border-yellow-400 pl-2"}`}>Shop</Link>
+            <Link to="/" className={`${menu === 'Shop' && "border-l-4 border-yellow-400 pl-2"}`}> Shop</Link>
           </li>
           <li className="px-6 py-3 hover:bg-gray-700" onClick={() => { setMenu('Men'); setSidebarOpen(false); }}>
             <Link to="/Mens" className={`${menu === 'Men' && "border-l-4 border-yellow-400 pl-2"}`}>Men</Link>
@@ -87,9 +88,9 @@ export default function ShopHeader() {
         </ul>
       </div>
 
-      {/* Overlay (Closes Sidebar when Clicked) */}
+      {/* it closes the sidebar when you click on it */}
       {sidebarOpen && (
-        <div className="fixed inset-0 bg-black opacity-50 md:hidden" onClick={() => setSidebarOpen(false)}></div>
+        <div className="fixed inset-0 bg-yellow opacity-50 md:hidden" onClick={() => setSidebarOpen(false)}></div>
       )}
     </>
   );
